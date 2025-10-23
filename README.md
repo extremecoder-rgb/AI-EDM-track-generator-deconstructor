@@ -1,7 +1,7 @@
 # EDM Studio AI
 
 **Tagline:**
-*Instantly play AI-generated EDM tracks and explore your own music by deconstructing audio into stems — all in one intuitive web interface.*
+*Instantly play AI-generated EDM tracks and explore your own music by deconstructing audio into stems — all in one intuitive Streamlit interface.*
 
 ---
 
@@ -18,13 +18,12 @@
 * [Getting Started](#getting-started)
 * [Dependencies](#dependencies)
 * [Usage](#usage)
-* [Screenshots](#screenshots)
 
 ---
 
 ## Inspiration
 
-We wanted to create a fun, interactive tool for EDM enthusiasts and aspiring music producers to **experience AI-generated EDM tracks** while also exploring the inner structure of music. Many existing AI music demos either generate audio without giving insight into the composition or require expensive GPU setups. Our goal was to make a **hackathon-ready, accessible platform** that demonstrates both generation and audio deconstruction in a simple interface.
+We wanted to create a fun, interactive tool for EDM enthusiasts and aspiring music producers to **experience AI-generated EDM tracks** while also exploring the inner structure of music. Many existing AI music demos either generate audio without giving insight into the composition or require expensive GPU setups. Our goal was to make a **hackathon-ready, accessible platform** that demonstrates both generation and audio deconstruction in a simple interface using Streamlit.
 
 ---
 
@@ -41,8 +40,8 @@ We wanted to create a fun, interactive tool for EDM enthusiasts and aspiring mus
 ## How we built it
 
 * **Music Generation:** Pre-generated EDM track stored in the project to avoid GPU constraints.
-* **Audio Deconstruction:** Implemented using **Spleeter** and **Librosa** for stem separation.
-* **Frontend:** Built with **Gradio**, offering a clean, tab-based UI for generation and deconstruction.
+* **Audio Deconstruction:** Implemented using **Spleeter** and **Librosa** for separating stems.
+* **Frontend:** Built with **Streamlit**, providing an intuitive layout with tabs for music generation and audio deconstruction.
 * **Backend (optional):** Python scripts manage file handling and processing.
 
 ---
@@ -59,14 +58,14 @@ We wanted to create a fun, interactive tool for EDM enthusiasts and aspiring mus
 
 * Created a **fully functional, interactive demo** that works without live GPU generation.
 * Successfully integrated **audio playback and file deconstruction** into one platform.
-* Designed a **clean, hackathon-ready UI** that highlights both features for users.
+* Designed a **clean, hackathon-ready UI** using Streamlit.
 
 ---
 
 ## What we learned
 
 * Learned how to **integrate AI audio models and audio processing tools** into a web interface.
-* Gained experience with **Gradio for building hackathon-ready demos**.
+* Gained experience with **Streamlit for building hackathon-ready demos**.
 * Realized the importance of **pre-generated outputs** for rapid prototyping when GPU resources are limited.
 
 ---
@@ -96,9 +95,9 @@ AI-EDM-track-generator-deconstructor/
 │   └── music_generator.ipynb    # Optional notebook code
 │
 ├── frontend/
-│   └── app.py                   # Gradio interface
+│   └── app.py                   # Streamlit interface
 │
-├── output/                      # shared output folder
+├── output/
 │   ├── generated/
 │   └── deconstructed/
 │
@@ -135,31 +134,30 @@ pip install -r requirements.txt
 
 ## Dependencies
 
-* gradio==3.52.3
+* streamlit==1.25.0
 * numpy==1.26.4
 * soundfile==0.12.1
 * librosa==0.10.3.post2
 * spleeter==2.5.2
 
-*(Audiocraft / GPU packages not required for hackathon static demo)*
+> GPU packages like torch or Audiocraft are **not required** for this static demo.
 
 ---
 
 ## Usage
 
-Run the Gradio app:
+Run the Streamlit app:
 
 ```bash
-python frontend/app.py
+streamlit run frontend/app.py
 ```
 
-* **Generate Music Tab:** Click “Play Track” to listen to the pre-generated EDM track.
+* **Generate Music Tab:** Click “Play Track” to listen to the pre-generated EDM track (`edm_track.wav`).
 * **Deconstruct Audio Tab:** Upload `.wav` or `.mp3` files to deconstruct into stems.
 
-All generated/deconstructed files will be stored in:
+All outputs are stored in:
 
 * `output/generated/`
 * `output/deconstructed/`
 
 ---
-
