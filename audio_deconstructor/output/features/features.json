@@ -1,0 +1,47 @@
+{
+    "bass.wav": {
+        "tempo_bpm": 66.25600961538461,
+        "num_beats": 29,
+        "spectral_centroid_mean": 951.345092805274,
+        "spectral_rolloff_mean": 1955.3474407673189,
+        "zero_crossing_rate_mean": 0.009048518681847337,
+        "rms_energy_mean": 0.03458411619067192,
+        "onset_count": 134
+    },
+    "drums.wav": {
+        "tempo_bpm": 129.19921875,
+        "num_beats": 177,
+        "spectral_centroid_mean": 2766.79615269001,
+        "spectral_rolloff_mean": 5318.684597247835,
+        "zero_crossing_rate_mean": 0.067114774595093,
+        "rms_energy_mean": 0.06977131962776184,
+        "onset_count": 401
+    },
+    "other.wav": {
+        "tempo_bpm": 172.265625,
+        "num_beats": 136,
+        "spectral_centroid_mean": 1953.8391134587162,
+        "spectral_rolloff_mean": 3322.080147029346,
+        "zero_crossing_rate_mean": 0.05656038275737652,
+        "rms_energy_mean": 0.02634500153362751,
+        "onset_count": 336
+    },
+    "piano.wav": {
+        "tempo_bpm": 172.265625,
+        "num_beats": 2,
+        "spectral_centroid_mean": 889.7988431330183,
+        "spectral_rolloff_mean": 1801.9630785459428,
+        "zero_crossing_rate_mean": 0.007887104614336112,
+        "rms_energy_mean": 0.0033123234752565622,
+        "onset_count": 65
+    },
+    "vocals.wav": {
+        "tempo_bpm": 172.265625,
+        "num_beats": 108,
+        "spectral_centroid_mean": 4080.2356540995515,
+        "spectral_rolloff_mean": 6914.006274053881,
+        "zero_crossing_rate_mean": 0.1113157222177678,
+        "rms_energy_mean": 0.008860718458890915,
+        "onset_count": 378
+    }
+}
