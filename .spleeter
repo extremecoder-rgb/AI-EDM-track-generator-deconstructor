@@ -1,0 +1,9 @@
+{
+  "separator": {
+    "default": {
+      "audio_adapter": "spleeter.audio.adapter.FFMPEGProcessAudioAdapter",
+      "stft_backend": "tensorflow",
+      "model_dir": "audio_deconstructor/pretrained_models"
+    }
+  }
+}
