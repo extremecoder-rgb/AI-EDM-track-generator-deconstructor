@@ -208,3 +208,4 @@ __marimo__/
 input/
 pretrained_models/
 audio_deconstructor/output/track
+music_generator/musicgen_env
